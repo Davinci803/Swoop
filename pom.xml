@@ -36,6 +36,7 @@
             <version>1.18.30</version>
             <scope>provided</scope>
         </dependency>
+
         <!-- Front -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -58,7 +59,8 @@
             <groupId>org.flywaydb</groupId>
             <artifactId>flyway-core</artifactId>
         </dependency>
-        <!-- https://mavenlibs.com/maven/dependency/jakarta.validation/jakarta.validation-api -->
+
+        <!-- validator -->
         <dependency>
             <groupId>javax.validation</groupId>
             <artifactId>validation-api</artifactId>
@@ -75,18 +77,25 @@
             <version>3.0.0</version>
         </dependency>
 
-
         <!-- security -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-security</artifactId>
             <version>3.3.6</version>
         </dependency>
+        <!-- https://mavenlibs.com/maven/dependency/org.springframework.session/spring-session-jdbc -->
+        <dependency>
+            <groupId>org.springframework.session</groupId>
+            <artifactId>spring-session-jdbc</artifactId>
+            <version>2.1.4.RELEASE</version>
+        </dependency>
+
         <!-- mail -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-mail</artifactId>
         </dependency>
+
     </dependencies>
 
 
