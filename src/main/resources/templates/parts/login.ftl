@@ -30,11 +30,11 @@
 
         <#if isRegisterForm>
             <div class="form-group">
-                <label class="col-sm-2 col-from-label"> Password again: </label>
+                <label class="col-sm-2 col-form-label">Password:</label>
                 <div class="col-sm-4">
                     <input type="password" name="password2"
-                           class="form-control  ${(password2Error??)?string('is-invalid', '')}"
-                           placeholder="Retype password"/>
+                           class="form-control ${(password2Error??)?string('is-invalid', '')}"
+                           placeholder="Retype password" />
                     <#if password2Error??>
                         <div class="invalid-feedback">
                             ${password2Error}
