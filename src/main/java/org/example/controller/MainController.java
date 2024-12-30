@@ -62,8 +62,6 @@ public class MainController {
         message.setAuthor(user);
 
         if (bindingResult.hasErrors()) {
-            System.out.println("Message content: " + message.getText());
-            System.out.println("BindingResult has errors: " + bindingResult.hasErrors());
 
             Map<String, String> errorsMap = ControllerUtils.getErrors(bindingResult);
             model.mergeAttributes(errorsMap);
@@ -71,9 +69,7 @@ public class MainController {
 
         }else {
             saveFile(message, file);
-
             model.addAttribute("message", null);
-
             messageRepo.save(message);
         }
 
